@@ -44,6 +44,10 @@ createApp({
             this.sexo = alumno.sexo;
         },
         guardarAlumno() {
+            if (!this.sexo) {
+                alert("Por favor, seleccione el sexo del alumno.");
+                return;
+            }
             let alumno = {
                 codigo: this.codigo,
                 nombre: this.nombre,

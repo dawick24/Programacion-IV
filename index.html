@@ -68,7 +68,12 @@
                                 <div class="row p-1">
                                     <div class="col-3 col-md-2">SEXO</div>
                                     <div class="col-9 col-md-4">
-                                        <input v-model="sexo" type="text" name="txtSexoAlumno" id="txtSexoAlumno" class="form-control">
+                                        <select v-model="sexo" name="txtSexoAlumno" id="txtSexoAlumno" class="form-control">
+                                            <option value="">Selecciona el sexo</option>  
+                                            <option value="Masculino">Masculino</option>
+                                            <option value="Femenino">Femenino</option>
+                                            <option value="Otro">Otro</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
