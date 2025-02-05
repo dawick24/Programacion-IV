@@ -11,7 +11,9 @@
     <div id="app">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-6">
+                <div class="col-9">
+                    <div class="col-8 d-flex justify-content-end">
+
                     <form id="frmAlumno" name="frmAlumno" @submit.prevent="guardarAlumno">
                         <div class="card border-danger mb-3">
                             <div class="card-header bg-danger text-white">Registro de Alumnos</div>
@@ -41,8 +43,8 @@
                                     </div>
                                 </div>  
                                 <div class="row p-1">
-                                    <div class="col-3 col-md-2">DEPARTAMENTO</div>
-                                    <div class="col-9 col-md-4">                                       
+                                    <div class="col4- col-md-3">DEPARTAMENTO</div>
+                                    <div class="col-8 col-md-5">                                       
                                         <input required v-model="departamento" type="text" name="txtDepartamentoAlumno" id="txtDepartamentoAlumno" class="form-control">
                                     </div>
                                 <div class="row p-1">
@@ -58,8 +60,8 @@
                                     </div>
                                 </div>
                                 <div class="row p-1">
-                                    <div class="col-3 col-md-2">FECHA DE NACIMIENTO</div>
-                                    <div class="col-9 col-md-4">
+                                    <div class="col-4 col-md-3">FECHA DE NACIMIENTO</div>
+                                    <div class="col-8 col-md-5">
                                         <input v-model="fechaNacimiento" type="date" name="txtFechaNacimientoAlumno" id="txtFechaNacimientoAlumno" class="form-control">
                                     </div>
                                 </div>
@@ -77,7 +79,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-6">
+                <div class="col-3">
                     <div class="row p-2">
                         <div class="col-12">
                             <input type="text" v-model="busqueda" placeholder="Buscar" class="form-control">
