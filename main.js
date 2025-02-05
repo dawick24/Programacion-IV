@@ -12,7 +12,7 @@ createApp({
             departamento: '',
             telefono: '',
             email: '',
-            fechaDeNacimiento: '',
+            fechaNacimiento: '',
             sexo: ''
         }
     },
@@ -40,7 +40,7 @@ createApp({
             this.departamento = alumno.departamento;
             this.telefono = alumno.telefono;
             this.email = alumno.email;
-            this.fechaDeNacimiento = alumno.fechaDeNacimiento;
+            this.fechaDeNacimiento = alumno.fechaNacimiento;
             this.sexo = alumno.sexo;
         },
         guardarAlumno() {
@@ -52,7 +52,7 @@ createApp({
                 departamento: this.departamento,
                 telefono: this.telefono,
                 email: this.email,
-                fechaDeNacimiento: this.fechaDeNacimiento,
+                fechaDeNacimiento: this.fechaNacimiento,
                 sexo: this.sexo
             };
             localStorage.setItem(this.codigo, JSON.stringify(alumno));
